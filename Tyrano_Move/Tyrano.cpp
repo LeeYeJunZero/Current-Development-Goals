@@ -1,4 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
 
 #include "MyThirdPersonChar.h"
 #include "Components/CapsuleComponent.h"
@@ -10,30 +9,29 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/Controller.h"
 
-// Sets default values
+
 AMyThirdPersonChar::AMyThirdPersonChar()
 {
-	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	// Set size for collision capsule
+
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
-	// Don't rotate when the controller rotates. Let that just affect the camera.
+	
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
-	// Configure character movement
+	
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 
-	// Create a camera boom (pulls in towards the player if there is a collision)
+	
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->TargetArmLength = 300.0f;
 	CameraBoom->bUsePawnControlRotation = true;
 
-	// Create a follow camera
+	
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
@@ -54,15 +52,15 @@ void AMyThirdPersonChar::Move(const FInputActionValue& Value)
 
 		if (InputValue.X != 0.0f)
 		{
-			// get right vector 
+			
 			const FVector RightDirection = UKismetMathLibrary::GetRightVector(YawRotation);
-			// add movement in that direction
+			
 			AddMovementInput(RightDirection, InputValue.X);
 		}
 
 		if (InputValue.Y != 0.0f)
 		{
-			// get forward vector
+		
 			const FVector ForwardDirection = YawRotation.Vector();
 			AddMovementInput(ForwardDirection, InputValue.Y);
 		}
