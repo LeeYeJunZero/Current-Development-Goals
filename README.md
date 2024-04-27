@@ -2,6 +2,8 @@
 
 2024-04-15 이동 구현
 
+2025-94-26 시험 종료 개발 시작
+
 # Current-Development-Goals
 
 Tyrannosaurus: Hunting for Food
