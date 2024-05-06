@@ -5,6 +5,8 @@
 2024-04-26 시험 종료 개발 재개
 
 2024-04-29 스토리와 세계관 정립
+
+2024-05-06 공격(Mouse L)을 통해 오브젝트 파괴(VFX를 통해 이펙트 수정 예정)
 # Current-Development-Goals
 
 Tyrannosaurus: Hunting for Food
