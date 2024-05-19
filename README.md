@@ -11,6 +11,8 @@
 2024-05-13 조 미카엘 알렉산드로 (티라노) 모델링 구현과 컨트롤릭 구현(이동방향에 따른 꼬리 움직임 등)
 
 2024-05-14 조 미카엘 알렉산드로 3D 모델링 수정 
+
+2024-05-19 모션 애니메이팅 제작 중
 # Current-Development-Goals
 
 Tyrannosaurus: Hunting for Food
