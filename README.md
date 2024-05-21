@@ -12,7 +12,9 @@
 
 2024-05-14 조 미카엘 알렉산드로 3D 모델링 수정 
 
-2024-05-19 모션 애니메이팅 제작 중
+2024-05-19 모션 애니메이팅 제작
+
+2024-50-21 애니메이션 블랜딩 중
 # Current-Development-Goals
 
 Tyrannosaurus: Hunting for Food
