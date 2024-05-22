@@ -17,6 +17,8 @@
 2024-05-21 애니메이션 블랜딩 중
 
 2024-05-22 애니메이션 재작업 (부자연스러운 움직임, 공격 모션 등) 기존에 미끄러지듯 움직이던 문제를 해결하기 위해 기존 모션을 12프레임으로 변경 후 모션 바꾸는 중
+
+2024-05-22 스켈레탈 매쉬(Skeletal Mesh)에 소켓(Socket)을 추가하고 Fire 아티팩트를 (Actor)로 생성해서 캐릭터가 주으면 사용 할 수 있게 제작 중
 # Current-Development-Goals
 
 Tyrannosaurus: Hunting for Food
