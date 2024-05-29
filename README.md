@@ -25,6 +25,8 @@
 2024-05-27 이펙트 수정
 
 2024-05-28 점프키(space)를 press하면 활공 하는 기능 추가
+
+2024-05-29 AIController로 캐릭터를 자동으로 추적하는 적 ai 생성 중
 # Current-Development-Goals
 
 Tyrannosaurus: Hunting for Food
